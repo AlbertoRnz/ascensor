@@ -1,0 +1,79 @@
+import java.util.Scanner;
+
+public class pruebaUno {
+    public static void main(String[] args){
+
+        System.out.println("Bienvenido al menú de opciones del ascensor");
+        System.out.println("Escoja una opción: ");
+        System.out.println("A - Usar Ascensor | B - Estadísticas ascensor | C - Realizar la inspección | X - Salir");
+        System.out.println(" ");
+        System.out.println("La opción elegida es: ");
+
+        Scanner sc = new Scanner(System.in);
+
+        String choice;
+        choice = sc.nextLine().toUpperCase();
+
+        switch (choice){
+            case "A":
+                usarAscensor();
+                break;
+            case "B":
+                estadisticaAscensor();
+                break;
+            case "C":
+                realizarInspeccion();
+                break;
+            case "X":
+                System.out.println("Hasta la próxima! Espero que haya disfrutado de nuestros servicios");
+                break;
+            default:
+                System.out.println("ERROR La opción indicada no se encuentra entre las disponibles, pruebe de nuevo");
+                break;
+        }
+    }
+
+
+    public static void usarAscensor(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Bienvenido al ascensor, elije el piso en el que te encuentras: ");
+        System.out.println(" 5 | Azotea");
+        System.out.println(" 4 | Cuarto");
+        System.out.println(" 3 | Tercero");
+        System.out.println(" 2 | Segundo");
+        System.out.println(" 1 | Primero");
+        System.out.println(" 0 | Bajo");
+        System.out.println("-1 | Sótano");
+        int pisoActual = sc.nextInt();
+
+
+        System.out.println("A qué piso deseas ir: ");
+        int pisoDestino = sc.nextInt();
+
+        switch(pisoDestino){
+            case -1:
+                if(pisoActual>-1){
+                    for(int piso=pisoActual; piso>-1;piso--){
+
+                        System.out.print(piso+"... ");
+                    }
+                    System.out.println(" ");
+                    System.out.println("Llegó a su destino: "+ pisoDestino);
+                    
+                }
+
+        }
+    }
+
+
+    public static void estadisticaAscensor(){
+
+    }
+
+
+    public static void realizarInspeccion(){
+
+    }
+
+
+}
