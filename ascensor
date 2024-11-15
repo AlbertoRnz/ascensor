@@ -59,9 +59,161 @@ public class pruebaUno {
                     }
                     System.out.println(" ");
                     System.out.println("Llegó a su destino: "+ pisoDestino);
-                    
-                }
 
+                }else if(pisoActual==-1){
+                    System.out.println("Ya se encuentra en el piso: "+ pisoActual);
+
+                }else if(pisoActual<-1){
+                    for(int piso=pisoActual; piso<-1; piso++){
+                        System.out.print(piso+"... ");
+                    }
+                    System.out.println(" ");
+                    System.out.println("Llegó a su destino: "+ pisoDestino);
+                }else{
+                    System.out.print("Ese piso no existe");
+                }
+                break;
+
+            case 0:
+                if(pisoActual>0){
+                    for(int piso=pisoActual; piso>0;piso--){
+
+                        System.out.print(piso+"... ");
+                    }
+                    System.out.println(" ");
+                    System.out.println("Llegó a su destino: "+ pisoDestino);
+
+                }else if(pisoActual==0) {
+                    System.out.println("Ya se encuentra en el piso: " + pisoActual);
+
+                }else if(pisoActual<0){
+                    for(int piso=pisoActual; piso<0; piso++){
+                        System.out.print(piso+"... ");
+                    }
+                    System.out.println(" ");
+                    System.out.println("Llegó a su destino: "+ pisoDestino);
+                }else{
+                    System.out.print("Ese piso no existe");
+                }
+                break;
+
+            case 1:
+                if(pisoActual>1){
+                    for(int piso=pisoActual; piso>1;piso--){
+
+                        System.out.print(piso+"... ");
+                    }
+                    System.out.println(" ");
+                    System.out.println("Llegó a su destino: "+ pisoDestino);
+
+                }else if(pisoActual==1) {
+                    System.out.println("Ya se encuentra en el piso: " + pisoActual);
+
+                }else if(pisoActual<1){
+                    for(int piso=pisoActual; piso<1; piso++){
+                        System.out.print(piso+"... ");
+                    }
+                    System.out.println(" ");
+                    System.out.println("Llegó a su destino: "+ pisoDestino);
+                }else{
+                    System.out.print("Ese piso no existe");
+                }
+                break;
+
+            case 2:
+                if(pisoActual>2){
+                    for(int piso=pisoActual; piso>2;piso--){
+
+                        System.out.print(piso+"... ");
+                    }
+                    System.out.println(" ");
+                    System.out.println("Llegó a su destino: "+ pisoDestino);
+
+                }else if(pisoActual==2) {
+                    System.out.println("Ya se encuentra en el piso: " + pisoActual);
+
+                }else if(pisoActual<2){
+                    for(int piso=pisoActual; piso<2; piso++){
+                        System.out.print(piso+"... ");
+                    }
+                    System.out.println(" ");
+                    System.out.println("Llegó a su destino: "+ pisoDestino);
+                }else{
+                    System.out.print("Ese piso no existe");
+                }
+                break;
+
+            case 3:
+                if(pisoActual>3){
+                    for(int piso=pisoActual; piso>3;piso--){
+
+                        System.out.print(piso+"... ");
+                    }
+                    System.out.println(" ");
+                    System.out.println("Llegó a su destino: "+ pisoDestino);
+
+                }else if(pisoActual==3) {
+                    System.out.println("Ya se encuentra en el piso: " + pisoActual);
+
+                }else if(pisoActual<3){
+                    for(int piso=pisoActual; piso<3; piso++){
+                        System.out.print(piso+"... ");
+                    }
+                    System.out.println(" ");
+                    System.out.println("Llegó a su destino: "+ pisoDestino);
+                }else{
+                    System.out.print("Ese piso no existe");
+                }
+                break;
+
+            case 4:
+                if(pisoActual>4){
+                    for(int piso=pisoActual; piso>4;piso--){
+
+                        System.out.print(piso+"... ");
+                    }
+                    System.out.println(" ");
+                    System.out.println("Llegó a su destino: "+ pisoDestino);
+
+                }else if(pisoActual==4) {
+                    System.out.println("Ya se encuentra en el piso: " + pisoActual);
+
+                }else if(pisoActual<4){
+                    for(int piso=pisoActual; piso<4; piso++){
+                        System.out.print(piso+"... ");
+                    }
+                    System.out.println(" ");
+                    System.out.println("Llegó a su destino: "+ pisoDestino);
+                }else{
+                    System.out.print("Ese piso no existe");
+                }
+                break;
+
+            case 5:
+                if(pisoActual>5){
+                    for(int piso=pisoActual; piso>5;piso--){
+
+                        System.out.print(piso+"... ");
+                    }
+                    System.out.println(" ");
+                    System.out.println("Llegó a su destino: "+ pisoDestino);
+
+                }else if(pisoActual==5) {
+                    System.out.println("Ya se encuentra en el piso: " + pisoActual);
+
+                }else if(pisoActual<5){
+                    for(int piso=pisoActual; piso<5; piso++){
+                        System.out.print(piso+"... ");
+                    }
+                    System.out.println(" ");
+                    System.out.println("Llegó a su destino: "+ pisoDestino);
+                }else{
+                    System.out.print("Ese piso no existe");
+                }
+                break;
+
+            default:
+                System.out.println("Ese piso no existe");
         }
     }
 
